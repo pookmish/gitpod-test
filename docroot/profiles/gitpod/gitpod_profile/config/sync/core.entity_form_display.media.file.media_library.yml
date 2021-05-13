@@ -1,0 +1,30 @@
+uuid: c4731d08-2078-4e7d-80d1-bf81cceaaae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - file
+_core:
+  default_config_hash: QHDyJsvgDwtQ7w1z-KG1YQ1ik1psFpqQnzKJFjiJzKU
+id: media.file.media_library
+targetEntityType: media
+bundle: file
+mode: media_library
+content:
+  field_media_file:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

@@ -1,0 +1,28 @@
+project:
+  machine_name: gitpod_test
+  prefix: gitpod
+  human_name: 'Gitpod'
+  profile:
+    name: gitpod_profile
+  local: {}
+git:
+  default_branch: 1.x
+deploy:
+  dir: '${repo.root}/deploy'
+  tag_source: false
+  exclude_file: '${repo.root}/blt/deploy/rsync-exclude.txt'
+  gitignore_file: '${repo.root}/blt/deploy/.gitignore'
+drush:
+  aliases:
+    remote: '${project.machine_name}.test'
+    local: self
+    ci: self
+    prod: '${project.machine_name}.prod'
+  default_alias: '${drush.aliases.local}'
+cm:
+  strategy: config-split
+  allow-overrides: true
+validate:
+  twig:
+    functions: [drupal_block, drupal_field, pattern]
+    filters: [render_clean]

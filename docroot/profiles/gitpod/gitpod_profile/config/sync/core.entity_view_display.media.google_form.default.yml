@@ -1,0 +1,30 @@
+uuid: 21be114a-1d0c-4c84-915f-312ddc075681
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.google_form.field_media_google_form
+    - field.field.media.google_form.field_media_google_form_hgt
+    - media.type.google_form
+  module:
+    - stanford_media
+_core:
+  default_config_hash: InLr9FkyfhTxPRp5JV2_O62ytyzQpxjv1TXTDCDSZV0
+id: media.google_form.default
+targetEntityType: media
+bundle: google_form
+mode: default
+content:
+  field_media_google_form:
+    label: visually_hidden
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: google_form_formatter
+    region: content
+hidden:
+  created: true
+  field_media_google_form_hgt: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,30 @@
+uuid: f633b50d-bbab-4e93-93b9-3fa9a89ed859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_page.field_components
+    - node.type.layout_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.layout_page.default
+targetEntityType: node
+bundle: layout_page
+mode: default
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

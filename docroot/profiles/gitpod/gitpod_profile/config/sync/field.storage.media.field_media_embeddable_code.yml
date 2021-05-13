@@ -1,0 +1,21 @@
+uuid: 7a13344f-ead2-49ed-95ba-45bf3b53a5e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: P_Imq7vFLx4bZTr8sDbSiDn2G9sL3oLT63jGBaEcrWg
+id: media.field_media_embeddable_code
+field_name: field_media_embeddable_code
+entity_type: media
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

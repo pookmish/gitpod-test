@@ -1,0 +1,15 @@
+uuid: 1b5a69bc-ff24-4114-b094-c8fe5aa8ab0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: text_area
+label: 'Text Area'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

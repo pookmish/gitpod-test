@@ -1,0 +1,6 @@
+name: 'Gitpod Profile'
+description: 'Testable Profile'
+version: 8.x-1.x
+type: profile
+project: Gitpod
+core_version_requirement: ^9

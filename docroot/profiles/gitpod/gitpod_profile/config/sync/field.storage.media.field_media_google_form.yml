@@ -1,0 +1,23 @@
+uuid: 7e1157fc-bed5-4558-b940-ea23a7d61f84
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: LvmB9L7ZOMA4p325AxmenVrsdssl-S6n0CVPZBcQ2p0
+id: media.field_media_google_form
+field_name: field_media_google_form
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: a29c4a73-5699-4c9e-8c03-517294224ec8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: W0bu_OzFdhlyTXfNQSmO3NPfk4MM8VnXI81AyBL3z0I
+name: responsive_extra_large
+label: 'Responsive Extra Large (2400)'
+effects:
+  80768f63-f811-4643-acd6-da6dff9bc151:
+    uuid: 80768f63-f811-4643-acd6-da6dff9bc151
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: true

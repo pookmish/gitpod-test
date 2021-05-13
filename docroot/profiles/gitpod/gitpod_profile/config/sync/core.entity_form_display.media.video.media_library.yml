@@ -1,0 +1,22 @@
+uuid: fefc76e7-cd4a-4c24-b4fc-e4eccf155b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_media_oembed_video
+    - media.type.video
+_core:
+  default_config_hash: fIlXnCNx_BxBH7L8T9_d8o8MjyAuiME6rZMBV_lE5GU
+id: media.video.media_library
+targetEntityType: media
+bundle: video
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  name: true
+  path: true
+  status: true
+  uid: true

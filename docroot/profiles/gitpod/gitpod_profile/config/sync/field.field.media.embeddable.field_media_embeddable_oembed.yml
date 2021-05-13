@@ -1,0 +1,21 @@
+uuid: f32d7d74-1fc9-46df-98da-646b22dcdd62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_embeddable_oembed
+    - media.type.embeddable
+_core:
+  default_config_hash: hgHCtZVzj04GNHchA4UIMZsqtdmITlV9tlvXNBYZyAs
+id: media.embeddable.field_media_embeddable_oembed
+field_name: field_media_embeddable_oembed
+entity_type: media
+bundle: embeddable
+label: 'oEmbed URL'
+description: 'The URL of the media to embed.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
