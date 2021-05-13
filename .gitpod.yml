@@ -5,3 +5,4 @@ tasks:
       composer install -n
       vendor/bin/blt alias --no-interaction
       source ~/.bashrc
+      blt blt:telemetry:disable --no-interaction
