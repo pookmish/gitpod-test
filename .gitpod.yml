@@ -6,3 +6,5 @@ tasks:
       vendor/bin/blt alias --no-interaction
       source ~/.bashrc
       blt blt:telemetry:disable --no-interaction
+      gp env APACHE_DOCROOT_IN_REPO=docroot
+      eval $(gp env -e)
