@@ -1,9 +1,7 @@
 FROM drupal:php7.4-apache
 
 RUN apt update
-RUN apt install git imagemagick rsync nano wget -y
-
-RUN docker-php-ext-enable imagick
+RUN apt install git imagemagick php-imagick rsync nano wget -y
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
