@@ -4,15 +4,8 @@ ports:
   - port: 33060
     onOpen: ignore
   - port: 8001
-    onOpen: open-browser
+    onOpen: open-preview
 image:
   file: .gitpod/Dockerfile
 tasks:
-  - init: |
-      composer install -n
-      vendor/bin/blt alias --no-interaction
-      source ~/.bashrc
-      blt blt:telemetry:disable --no-interaction
-      gp env APACHE_DOCROOT_IN_REPO=docroot
-      eval $(gp env -e)
-      cp .gitpod/blt.yml blt/local.blt.yml
+  - init: .gitpod/init.sh
