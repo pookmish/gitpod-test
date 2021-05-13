@@ -6,3 +6,5 @@ ports:
 tasks:
   - init: >
       composer install --prefer-source -n
+      vendor/bin/blt alias --no-interaction
+      source ~/.bashrc
