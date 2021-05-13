@@ -8,4 +8,4 @@ ports:
 image:
   file: .gitpod/Dockerfile
 tasks:
-  - init: .gitpod/init.sh
+  - init: chmod +x .gitpod/init.sh && .gitpod/init.sh
