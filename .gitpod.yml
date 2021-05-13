@@ -5,6 +5,6 @@ ports:
     onOpen: open-preview
 tasks:
   - init: >
-      composer install --prefer-source -n
+      composer install -n
       vendor/bin/blt alias --no-interaction
       source ~/.bashrc
