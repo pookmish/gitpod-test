@@ -4,5 +4,7 @@ ports:
   - port: 8000
     onOpen: open-preview
 tasks:
+  - before: >
+      cd /var/www && rm -rf html && ln -s $GITPOD_REPO_ROOT/docroot html
   - init: >
       composer install --prefer-source -n
