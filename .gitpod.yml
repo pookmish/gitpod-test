@@ -8,5 +8,5 @@ ports:
 image:
   file: .gitpod/Dockerfile
 tasks:
-  - init: chmod +x .gitpod/init.sh && .gitpod/init.sh
+  - init: .gitpod/init.sh
     command: apache2ctl restart

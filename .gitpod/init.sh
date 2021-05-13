@@ -9,4 +9,3 @@ eval $(gp env -e)
 cp .gitpod/blt.yml blt/local.blt.yml
 blt settings
 blt drupal:install -n
-apache2ctl start
