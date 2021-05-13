@@ -1,3 +1,10 @@
+ports:
+  - port: 3306
+    onOpen: ignore
+  - port: 33060
+    onOpen: ignore
+  - port: 8001
+    onOpen: open-browser
 image:
   file: .gitpod/Dockerfile
 tasks:
@@ -8,3 +15,4 @@ tasks:
       blt blt:telemetry:disable --no-interaction
       gp env APACHE_DOCROOT_IN_REPO=docroot
       eval $(gp env -e)
+      cp .gitpod/blt.yml blt/local.blt.yml
